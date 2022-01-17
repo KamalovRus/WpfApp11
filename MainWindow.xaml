@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApp11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="350">
+    <Window.Resources>
+
+    </Window.Resources>
+    <Grid>
+        <Path Fill="Red" Stroke="Black">
+            <Path.Data>
+                <EllipseGeometry Center="165,125" RadiusX="50" RadiusY="50"/>
+            </Path.Data>
+        </Path>
+        <Path Fill="White" Stroke="Black">
+            <Path.Data>
+                <EllipseGeometry Center="165,125" RadiusX="40" RadiusY="40"/>
+            </Path.Data>
+        </Path>
+        <Path Fill="Red" Stroke="Black">
+            <Path.Data>
+                <RectangleGeometry Rect="169, 125, 80, 10"/>
+            </Path.Data>
+            <Path.RenderTransform >
+                <RotateTransform CenterX="180" Angle="310" CenterY="175"/>
+            </Path.RenderTransform>
+        </Path>
+
+    </Grid>
+</Window>
